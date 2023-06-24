@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import './globals.css'
+import Navbar from "@/components/Navbar"
 
 export const metadata = {
   title: 'Anastasia Stanmeyer',
@@ -16,7 +17,10 @@ export default function RootLayout({
       <Head>
         <link></link>
       </Head>
-      <body className={""}>{children}</body>
+      <body className={""}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   )
 }
